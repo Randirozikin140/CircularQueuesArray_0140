@@ -42,4 +42,11 @@ public:
         }
         queue_array[REAR] = num; // 3
     }
+    void remove() {
+        // cek apakah antrian kosong
+        if (FRONT == -1) {
+            cout << "\nQueue underflow\n"; // 1
+            return;                        // 2
+        }
+    }
 };
